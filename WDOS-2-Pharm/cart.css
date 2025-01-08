@@ -1,0 +1,90 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+.cart-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.cart-table th {
+    background-color: #f4f4f4;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(54, 195, 54);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .bottom-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer .top-footer {
+        flex-direction: column;
+    }
+
+    .cart-table th, .cart-table td {
+        padding: 8px;
+    }
+
+    .cart-table {
+        overflow-x: auto;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .cart-table th, .cart-table td {
+        display: block;
+        text-align: left;
+    }
+
+    .cart-table td {
+        border-top: 1px solid #ddd;
+    }
+
+    .cart-table td input {
+        width: 50px;
+    }
+}
+
+
+

@@ -1,0 +1,79 @@
+button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+/* Billing Details Section */
+.billing-details {
+    padding: 20px;
+}
+
+.billing-details form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.billing-details input, .billing-details button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.payment-methods label {
+    margin: 5px 0;
+}
+
+/* Thank You Message */
+#thank-you-message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: green;
+}
+
+/* Responsiveness  */
+@media screen and (max-width: 768px) {
+    header .top-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .bottom-header {
+        flex-direction: column;
+    }
+
+    .billing-details form {
+        width: 100%;
+    }
+
+    .billing-details input,
+    .billing-details button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    footer .top-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .top-footer > div {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .billing-details form {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+ 
+ 

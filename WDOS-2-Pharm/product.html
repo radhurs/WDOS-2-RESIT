@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="product.css">
+    <title>Pharm-Product Page</title>
+</head>
+<body>
+    <header>
+        <div class="top-header">
+            <a href="home.html" class="site-name">Pharm</a>
+            <input type="text" class="search-bar" placeholder="Search...">
+            <button type="submit" class="search-btn">
+                <!--search icon from Icons8-->
+                <img src="icon/search.png" alt="search Icon" class="search-icon"> 
+            </button>
+            
+            <div class="cart-container">
+                <a href="account.html"></a><img src="icon/account.png" alt="account Icon" class="cart-icon"></a>
+                <span class="account-icon"></span>
+            </div>
+
+            <div class="cart-container">
+                <a href="wish.html"></a><img src="icon/wish.png" alt="Wish Icon" class="cart-icon"></a>
+                <span class="heart-icon"></span>
+            </div>
+
+            
+
+            <div class="cart-container">
+                <!--shopping cart icon from Icons8-->
+                <img src="icon/shopping.png" alt="Cart Icon" class="cart-icon">
+                <span class="cart-count">3</span> <!-- Item count in the cart -->
+              </div>
+            
+        </div>
+        <div class="bottom-header">
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="product.html">Products</a>
+            <a href="faq.html">FAQ</a>
+            <a href="blog.html">Blog</a>
+        </div>
+    </header>
+
+
+
+
+<main>
+
+
+
+<section class="order-form" id="order-form">
+
+    <h2 id="a">Analgesics</h2>
+    <div class="product-item">
+        <img src="icon/Tramadol.jpg" alt="Tramadol">
+        <p>Tramadol</p>
+        <p>Price:Rs 500</p>
+        <button class="cta" onclick="addToCart('Tramadol', 500)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/paracetamol.jpg" alt="paracetamol">
+        <p>Paracetamol</p>
+        <p>Price:Rs 220</p>
+        <button class="cta" onclick="addToCart('Paracetamol', 220)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/naproxen.jpg" alt="naproxen">
+        <p>Naproxen</p>
+        <p>Price:Rs 350</p>
+        <button class="cta"onclick="addToCart('Naproxen', 350)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/Aspirin.png" alt="Aspirin">
+        <p>Aspirin</p>
+        <p>Price:Rs 200</p>
+        <button class="cta"onclick="addToCart('Aspirin', 200)">Add to Cart</button>
+    </div>
+</section>
+
+
+<section class="order-form" id="order-form">
+    
+    <div class="product-item">
+        <img src="icon/ibuprofen.jpg" alt="Ibuprofen">
+        <p>Ibuprofen</p>
+        <p>Price:Rs 340</p>
+        <button class="cta" onclick="addToCart('Ibuprofen', 340)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/Dicklofenec.png" alt="Diclofenec">
+        <p>Diclofenec</p>
+        <p>Price:Rs 320</p>
+        <button class="cta" onclick="addToCart('Diclofenec', 320)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/oxycodone.jpg" alt="oxycodone">
+        <p>Oxycodone</p>
+        <p>Price:Rs 180</p>
+        <button class="cta"onclick="addToCart('Oxycodone', 180)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/morphine.jpg" alt="Morphine">
+        <p>Morphine</p>
+        <p>Price:Rs 400</p>
+        <button class="cta"onclick="addToCart('Morphine', 400)">Add to Cart</button>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<section class="order-form" id="order-form">
+    <h2 id="a"> Antibiotics</h2>
+    <div class="product-item">
+        <img src="icon/Amikacin.jpg" alt="Amikacin">
+        <p>Amikacin</p>
+        <p>Price:Rs 380</p>
+        <button class="cta" onclick="addToCart('Amikacin', 380)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/tetracycline.jpg" alt="tetracycline">
+        <p>Tetracycline</p>
+        <p>Price:Rs 450</p>
+        <button class="cta" onclick="addToCart('Tetracycline', 450)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/Amoxil.jpg" alt="Amoxil">
+        <p>Amoxil</p>
+        <p>Price:Rs 520</p>
+        <button class="cta"onclick="addToCart('Amoxil', 520)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/doxycycline.png" alt="Doxycycline">
+        <p>Doxycycline</p>
+        <p>Price:Rs 550</p>
+        <button class="cta"onclick="addToCart('Doxycycline', 550)">Add to Cart</button>
+    </div>
+</section>
+
+
+<section class="order-form" id="order-form">
+    
+    <div class="product-item">
+        <img src="icon/Clindamycin.jpg" alt="Product 1">
+        <p>Clindamycin</p>
+        <p>Price:Rs 430</p>
+        <button class="cta" onclick="addToCart('Clindamycin', 430)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/Augmentin.jpg" alt="Augmentin">
+        <p>Augmentin</p>
+        <p>Price:Rs 190</p>
+        <button class="cta" onclick="addToCart('Augmentin', 190)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/Capreomycin.jpg" alt="Capreomycin">
+        <p>Capreomycin</p>
+        <p>Price:Rs 420</p>
+        <button class="cta"onclick="addToCart('Capreomycin', 420)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/levofloxa.jpeg" alt="Levofloxa">
+        <p>Levofloxa</p>
+        <p>Price:Rs 225</p>
+        <button class="cta"onclick="addToCart('Levofloxa', 225)">Add to Cart</button>
+    </div>
+</section>
+
+
+
+
+
+
+
+<section class="order-form" id="order-form">
+    <h2 id="a">Antidepressants</h2>
+    <div class="product-item">
+        <img src="icon/Imipramine.png" alt="Imipramine">
+        <p>Imipramine</p>
+        <p>Price:Rs 360</p>
+        <button class="cta" onclick="addToCart('Imipramine', 360)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/Fluoxetine.jpg" alt="Fluoxetine">
+        <p>Fluoxetine</p>
+        <p>Price:Rs 315</p>
+        <button class="cta" onclick="addToCart('Fluoxetine', 315)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/Citalopram.jpg" alt="Citalopram">
+        <p>Citalopram</p>
+        <p>Price:Rs 330</p>
+        <button class="cta"onclick="addToCart('Citalopram', 330)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/Sertraline.png" alt="Sertraline">
+        <p>Sertraline</p>
+        <p>Price:Rs 525</p>
+        <button class="cta"onclick="addToCart('Sertraline', 525)">Add to Cart</button>
+    </div>
+</section>
+
+
+<section class="order-form" id="order-form">
+    
+    <div class="product-item">
+        <img src="icon/Paroxetine.png" alt="Paroxetine">
+        <p>Paroxetine</p>
+        <p>Price:Rs 310</p>
+        <button class="cta" onclick="addToCart('Indapamide', 310)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/nortriptyline.jpeg" alt="Nortriptyline">
+        <p>Nortriptyline</p>
+        <p>Price:Rs 230</p>
+        <button class="cta" onclick="addToCart('Nortriptyline', 230)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/Clomipramine.jpg" alt="Clomipramine">
+        <p>Clomipramine</p>
+        <p>Price:Rs 520</p>
+        <button class="cta"onclick="addToCart('Clomipramine',5 20)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/Mirtazep.jpg" alt="Mirtazapine">
+        <p>Mirtazapine</p>
+        <p>Price:Rs 425</p>
+        <button class="cta"onclick="addToCart('Mirtazapine', 425)">Add to Cart</button>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="order-form" id="order-form">
+    <h2 id="a">Antihistamines</h2>
+    <div class="product-item">
+        <img src="icon/claritin.png" alt="claritin">
+        <p>Claritin</p>
+        <p>Price:Rs 550</p>
+        <button class="cta" onclick="addToCart('Claritin', 550)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/Allegra.jpg" alt="Allegra">
+        <p>Allegra</p>
+        <p>Price:Rs 490</p>
+        <button class="cta" onclick="addToCart('Allegra', 490)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/clemestine.png" alt="Clemestine">
+        <p>Clemestine</p>
+        <p>Price:Rs 590</p>
+        <button class="cta"onclick="addToCart('Clemestine', 590)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/Unisom.jpg" alt="Unisom">
+        <p>Unisom</p>
+        <p>Price:Rs 600</p>
+        <button class="cta"onclick="addToCart('Unisom', 600)">Add to Cart</button>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="order-form" id="order-form">
+    <h2 id="a">Antihypertensives</h2>
+    <div class="product-item">
+        <img src="icon/indapamide.jpg" alt="Indapamide">
+        <p>Indapamide</p>
+        <p>Price:Rs 355</p>
+        <button class="cta" onclick="addToCart('Indapamide', 355)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/Clonidine.jpg" alt="Clonidine">
+        <p>Clonidine</p>
+        <p>Price:Rs 540</p>
+        <button class="cta" onclick="addToCart('Clonidine', 540)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/Metolone Metolazone .png" alt="Metolazone">
+        <p>Metalozone</p>
+        <p>Price:Rs 620</p>
+        <button class="cta"onclick="addToCart('Metalozone', 620)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/propranolol.jpg" alt="Propranolol">
+        <p>Propranolol</p>
+        <p>Price:Rs 440</p>
+        <button class="cta"onclick="addToCart('Propranolol', 440)">Add to Cart</button>
+    </div>
+</section>
+
+<section class="order-form" id="order-form">
+    
+    <div class="product-item">
+        <img src="icon/fosinopril.jpg" alt="Fosinopril">
+        <p>Fosinopril</p>
+        <p>Price:Rs 530</p>
+        <button class="cta" onclick="addToCart('Fosinopril', 530)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/Captopril.png" alt="Captopril">
+        <p>Captopril</p>
+        <p>Price:Rs 570</p>
+        <button class="cta" onclick="addToCart('Captopril', 570)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/parazosin.jpg" alt="Prazosin">
+        <p>Parazosin</p>
+        <p>Price:Rs 595</p>
+        <button class="cta"onclick="addToCart('Parazosin', 595)">Add to Cart</button>
+    </div>
+    <div class="product-item">
+        <img src="icon/amlodipin.jpeg" alt="Amlodipin">
+        <p>Amlodipin</p>
+        <p>Price:Rs 465</p>
+        <button class="cta"onclick="addToCart('Amlodipin', 465)">Add to Cart</button>
+    </div>
+</section>
+
+
+<section id="view-cart">
+    <a href="cart.html"> <button class="cta">View Cart</button></a>
+    
+</section>
+
+
+</main>
+
+
+<footer>
+    <div class="top-footer">
+        <div class="about">
+            <p>Pharm is your go-to pharmacy for all healthcare needs.</p>
+            <p>Contact us: 076 056 6785</p>
+        </div>
+        <div class="hours">
+            <p>Mon-Sat: 9am - 6pm</p>
+            <p>Main Street, Vicecity, US</p>
+        </div>
+        <div class="service">
+            <p>Services</p>
+            <p><a href="term.html">Terms and Conditions</a></p>
+            <p><a href="payment.html">Payment Methods</a></p>
+            <p><a href="policy.html">Privacy Policy</a></p>
+            <p><a href="complaint.html">Product Complaint</a></p>
+            <p><a href="faq.html">FAQ</a></p>
+        </div>
+        <div class="follow-us">
+            <p>Follow Us</p>
+            <a href="twitter.html">Twitter</a>
+            <a href="fb.html">Facebook</a>
+            <a href="you.html">Youtube</a>
+            <a href="insta.html">Instagram</a>
+        </div>
+    </div>
+    <div class="bottom-footer">
+        <p>&copy; 2025 Pharm, All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="product.js"></script>
+</body>
+</html>
+
